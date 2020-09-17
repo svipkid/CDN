@@ -34,6 +34,10 @@ Agent pid XXX
 然后再输入：
 ssh-add ~/.ssh/id_rsa
 -->
+##### flink-pjax.zip
+- 和flink.min.css一起使用
+- 解压路径themes/butterfly/layout，覆盖flink.pug
+
 ##### custom.css
 - butterfly主题自定义css
 - 头像下面的aside:按钮设置圆角
