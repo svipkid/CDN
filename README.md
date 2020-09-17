@@ -32,7 +32,7 @@ eval "$(ssh-agent -s)"
 Agent pid XXX
 
 然后再输入：
-ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/svipkid_rsa
 -->
 ##### flink-pjax.zip
 - 和flink.min.css一起使用
