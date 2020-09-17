@@ -4,5 +4,5 @@ then info=":pencil: update content"
 fi
 git add .
 git commit -m "$info"
-git pull origin master
-git push origin master
+git pull -f origin master
+git push -f origin master
