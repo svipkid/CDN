@@ -26,3 +26,4 @@ to{transform:rotate(360deg)}
 .flink#article-container .flink-list>.flink-list-item a .rauto{animation:auto_rotate_right var(--autotime) linear infinite}
 .flink#article-container .post-cards .md-links>.md-links-item .customcolor{color:var(--namecolor,#1f2d3d)}
 .flink#article-container .post-cards .md-links>.md-links-item .customcolor:hover{color:#fff}
+.flink#article-container .flink-list>.flink-list-item{--text-bg-hover:#49b1f5}
