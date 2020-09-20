@@ -6,10 +6,7 @@
 .btn-beautify {
   border-radius: 5px;
 }
-/* 友链页面设置边框和圆角 */
-/* .flink-list-item { */
-  /* border-style:solid; */
-  /* border-width:1px; */
-  /* border-radius: 5px; */
-  /* box-shadow:0 2px 12px var(--primary-color,#49b1f5); */
-/* } */
+/* 修复主题自带的隐藏按钮点击后消失问题 */
+.hide-inline > .hide-button.open, .hide-block > .hide-button.open {
+  display: inline-block;
+}
