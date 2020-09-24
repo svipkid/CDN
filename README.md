@@ -52,10 +52,10 @@ class1:
   class_desc: 副标题描述支持html标签
   link_list:
     1:
-      name: name
-      link: https://antmoe.com
-      avatar: http://mrdavid.test.upcdn.net/CDN/img/portrait.png
-      descr: 文字信息
+      name: 名字✨
+      link: 网址✨
+      avatar: 头像✨
+      descr: 文字信息✨
       # 鼠标悬停背景色 支持渐变色 linear-gradient(to right, #4facfe 0%, #00f2fe 100%)
       hovercolor: "linear-gradient(to right, #4facfe 0%, #00f2fe 100%)"
       # 边框大小 默认为0 
