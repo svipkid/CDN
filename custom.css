@@ -2,11 +2,18 @@
 #card-info-btn {
   border-radius: 5px;
 }
+.button--animated:before {
+  border-radius: 5px;
+}
 /* 全局md按钮设置圆角 */
 .btn-beautify {
   border-radius: 5px;
 }
-/* 修复主题自带的隐藏按钮点击后消失问题 */
+/* 修复主题自带的隐藏按钮点击后消失问题并设置圆角 */
 .hide-inline > .hide-button.open, .hide-block > .hide-button.open {
   display: inline-block;
+  border-radius: 5px;
+}
+.hide-button {
+  border-radius: 5px;
 }
