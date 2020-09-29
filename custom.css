@@ -17,3 +17,29 @@
 .hide-button {
   border-radius: 5px;
 }
+/* 鼠标样式设置 */
+body{
+  cursor:url(https://cdn.jsdelivr.net/gh/svipkid/CDN@master/default.cur),default
+}
+a,button,img{
+  cursor:url(https://cdn.jsdelivr.net/gh/svipkid/CDN@master/pointer.cur),default
+}
+/* 全局字体设置 */
+@font-face {
+  font-family:MyFont;
+  src: url(https://cdn.jsdelivr.net/gh/svipkid/CDN@master/webmo.woff2)
+}
+body{
+  font-family:MyFont!important;
+}
+/* 视频宽度 */
+video{width:100%}
+
+.read-mode{font-size:17px}
+.read-mode #web_bg{background:#fdf6e3}
+
+#site-subtitle
+    font-size: .8rem
+	
+.site-page
+    font-size: .8rem
