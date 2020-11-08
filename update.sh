@@ -4,7 +4,5 @@ then info=":pencil: update content"
 fi
 git add .
 git commit -m "$info"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/svipkid_rsa
 git pull origin master
 git push origin master

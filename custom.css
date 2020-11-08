@@ -19,15 +19,15 @@
 }
 /* 鼠标样式设置 */
 body{
-  cursor:url(https://cdn.jsdelivr.net/gh/svipkid/CDN@master/default.cur),default
+  cursor:url(https://mkids.gitee.io/cdn/default.cur),default
 }
 a,button,img{
-  cursor:url(https://cdn.jsdelivr.net/gh/svipkid/CDN@master/pointer.cur),default
+  cursor:url(https://mkids.gitee.io/cdn/pointer.cur),default
 }
 /* 全局字体设置 */
 @font-face {
   font-family:MyFont;
-  src: url(https://cdn.jsdelivr.net/gh/svipkid/CDN@master/webmo.woff2)
+  src: url(https://mkids.gitee.io/cdn/webmo.woff2)
 }
 body{
   font-family:MyFont!important;
@@ -38,8 +38,10 @@ video{width:100%}
 .read-mode{font-size:17px}
 .read-mode #web_bg{background:#fdf6e3}
 /* head字体大小 */
-#site-subtitle
-    font-size: .8rem
+#site-subtitle {
+    font-size: .8rem;
+}
 	
-#nav .site-page
-    font-size: .8rem
+#nav .site-page {
+    font-size: .8rem;
+}
