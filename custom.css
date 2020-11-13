@@ -29,9 +29,7 @@ a,button,img{
   font-family:MyFont;
   src: url(https://mkids.gitee.io/cdn/webmo.woff2)
 }
-body{
-  font-family:MyFont!important;
-}
+body {font-family:MyFont!important;}
 /* 视频宽度 */
 video{width:100%}
 
