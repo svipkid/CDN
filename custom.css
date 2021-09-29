@@ -19,10 +19,10 @@
 }
 /* 鼠标样式设置 */
 body{
-  cursor:url(https://mkids.gitee.io/cdn/default.cur),default
+  cursor:url(https://cdn.jsdelivr.net/gh/svipkid/CDN@master/default.cur),default
 }
 a,button,img{
-  cursor:url(https://mkids.gitee.io/cdn/pointer.cur),default
+  cursor:url(https://cdn.jsdelivr.net/gh/svipkid/CDN@master/pointer.cur),default
 }
 /* 全局字体设置 */
 @font-face {
