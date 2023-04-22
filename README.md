@@ -8,7 +8,7 @@ cd '路径'
 git init
 git add .
 git commit -m '描述信息'
-git remote add origin git@github.com:svipkid/CDN.git
+git remote add origin [~/.ssh/config配置的Host别名]:svipkid/CDN.git
 git pull origin master
 第一次 git push --set-upstream origin master -f
 git push origin master
