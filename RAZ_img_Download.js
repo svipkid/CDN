@@ -1,27 +1,64 @@
 // ==UserScript==
 // @name         RAZ_img_Download
-// @namespace    @@
-// @version      1.0.1
-// @description  点击按钮后批量下载网页中的所有图片。
+// @namespace    https://74vip.github.io/
+// @version      1.0.2
+// @description  点击按钮后批量下载网页中的所有图片,并打包成zip下载
 // @icon         https://www.readinga-z.com//favicon.ico
 // @match        *://www.readinga-z.com/*
 // @grant        GM_download
+// @grant        GM_xmlhttpRequest
+// @require      https://cdn.jsdelivr.net/npm/jszip@3.7.1/dist/jszip.min.js
 // ==/UserScript==
 
 (function() {
   'use strict';
 
+    const JSZip = window.JSZip;
+
   function downloadImages() {
     const images = document.querySelectorAll('img');
+    const zip = new JSZip();
+    const promises = [];
+
     images.forEach(img => {
       const url = img.src;
       const filename = url.substring(url.lastIndexOf('/')+1);
-      GM_download({
-        url: url,
-        name: filename,
-        saveAs: false
+      const promise = new Promise((resolve, reject) => {
+        GM_xmlhttpRequest({
+          method: "GET",
+          url: url,
+          responseType: "blob",
+          onload: function(response) {
+            zip.file(filename, response.response, {binary: true});
+            resolve();
+          },
+          onerror: function(response) {
+            console.error(`Failed to download ${url}`);
+            reject();
+          }
+        });
       });
+      promises.push(promise);
     });
+
+    Promise.all(promises)
+      .then(() => {
+        zip.generateAsync({type:"blob"})
+          .then(function(content) {
+            const zipFilename = document.title + ".zip";
+            GM_download({
+              url: URL.createObjectURL(content),
+              name: zipFilename,
+              saveAs: true
+            });
+          })
+          .catch(function(err) {
+            console.error(err);
+          });
+      })
+      .catch(() => {
+        console.error("Error downloading images");
+      });
   }
 
   const button = document.createElement('button');
